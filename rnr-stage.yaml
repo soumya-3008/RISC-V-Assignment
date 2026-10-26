@@ -10,7 +10,7 @@
 #      params: {WIDTH: your_param}
 #    See the assignment handout for an example.
 yaml_version: 1
-stage: fetch
+stage: system
 
 modules:
   flopr:       {source_files: [Resettable_FF/rtl.sv]}
