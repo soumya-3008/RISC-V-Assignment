@@ -1,4 +1,3 @@
-
 module imem (
     input  logic [31:0] a,
     output logic [31:0] rd
@@ -9,9 +8,7 @@ module imem (
 
     initial begin
         for (i = 0; i < 64; i = i + 1)
-            RAM[i] = 32'h00000013;
-
-        $readmemh("imem.txt", RAM);
+            RAM[i] = 32'h00000013;   // NOP (addi x0, x0, 0)
     end
 
     always_comb begin
